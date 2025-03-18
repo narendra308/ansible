@@ -1,6 +1,6 @@
 - name: PLAY1
   hosts: local
-  connections: local # managing its own server no need of credentianls
+  connection: local # managing its own server no need of credentianls
   tasks: 
   - name: PLAT1 and TASK1
     ansible.builtin.debug:
@@ -8,8 +8,8 @@
 
 - name: PLAY2
   hosts: local
-  connections: local # managing its own server no need of credentianls
+  connection: local # managing its own server no need of credentianls
   tasks: 
   - name: PLAT2 and TASK2
     ansible.builtin.debug:
-      msg: "Hello from PLAY2 and TASK2"
+      msg: "Hello from PLAY2 and TASK1"
