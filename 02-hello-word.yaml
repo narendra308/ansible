@@ -3,4 +3,4 @@
    tasks: # task=module=collection
    - name: print hello world
      ansible.builtin.debug:
-      msg: "hello world"
+       msg: "Hello world"
